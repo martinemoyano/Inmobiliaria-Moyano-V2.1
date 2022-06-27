@@ -4,23 +4,24 @@
     box-sizing: border-box;
 }
 
+@import './variables/colores.scss';
+
+
+
 .navbar-brand {
 
-    background-color: rgb(192, 196, 217);
+    background-color: $colorHeaderFooter;
     border-radius: 1rem;
     padding: 0.7rem;
+    &:hover{ background-color:$colorHover;
+        border-radius: 1rem;}
 }
 
-.navbar-brand:hover {
 
-    background-color: rgb(105, 177, 235);
-    border-radius: 1rem;
-    ;
-}
 
 .nav-link:hover {
-    background-color: rgb(105, 177, 235);
-    border-radius: 1rem;
+    background-color: $colorHeaderFooter;
+    border-radius: 1.2rem;
 }
 
 
@@ -67,13 +68,16 @@ div ul li a {
     font-size: 1rem;
 }
 
-.nosotros {
+%textoParrafo{
     max-width: 600px;
     border: 0.15rem solid black;
     padding: 0.6rem;
-    background-color: #ffffff;
+    background-color:$fondoTexto;
     opacity: 0.6;
 
+}
+
+.nosotros {@extend %textoParrafo;
 
 }
 
@@ -146,7 +150,7 @@ ion-icon {
 .cajaRequisitos {
     border: 0.15rem solid black;
     padding: 0.7rem;
-    background-color: #ffffff;
+    background-color:$fondoTexto;
     opacity: 0.6;
     height: fit-content;
     max-width: 600px;

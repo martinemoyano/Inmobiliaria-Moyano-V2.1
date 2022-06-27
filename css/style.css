@@ -4,17 +4,16 @@
   box-sizing: border-box; }
 
 .navbar-brand {
-  background-color: #c0c4d9;
+  background-color: #A9A9C7;
   border-radius: 1rem;
   padding: 0.7rem; }
-
-.navbar-brand:hover {
-  background-color: #69b1eb;
-  border-radius: 1rem; }
+  .navbar-brand:hover {
+    background-color: #8484ae;
+    border-radius: 1rem; }
 
 .nav-link:hover {
-  background-color: #69b1eb;
-  border-radius: 1rem; }
+  background-color: #A9A9C7;
+  border-radius: 1.2rem; }
 
 /* estilo menu navegacion */
 div ul li a {
