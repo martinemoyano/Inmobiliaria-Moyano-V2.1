@@ -7,13 +7,13 @@
 
 .navbar-brand {
   background-color: #A9A9C7;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   padding: 0.7rem;
 }
 
 .navbar-brand:hover {
   background-color: #8484ae;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
 }
 
 .nav-link:hover {
@@ -33,6 +33,7 @@ div ul li a {
 
 .dropdown-menu li a {
   font-size: 1rem;
+  background-color: #ffffff;
 }
 
 .header {
