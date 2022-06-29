@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+
+%textoParrafo{
+    max-width: 600px;
+    padding: 0.6rem;
+    background-color:$fondoTexto;
+    opacity: 0.8;
+}
+
+%direccion{font-family: 'Arvo', serif;
+    font-size: 1.5rem;
+margin-top: 0.5rem;} 
+
+%formulario{
+    padding: 2.1rem;
+    background-color:lightgray;
+    border-radius: 1rem;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 2rem;
+    margin: auto;
+    height: 70vh;
+    max-height: 450px;
+    opacity: 0.9;
+}
+
+@mixin colorDeFondo {
+    background-color: $colorDeFondo;
+    
+}

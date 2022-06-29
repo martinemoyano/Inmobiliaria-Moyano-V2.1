@@ -5,14 +5,14 @@
 }
 
 @import './variables/colores.scss';
-
+@import './variables/extend.scss';
 
 
 .navbar-brand {
 
     background-color: $colorHeaderFooter;
     border-radius: 1.2rem;
-    padding: 0.7rem;
+    padding: 0.2rem;
     &:hover{ background-color:$colorHover;
         border-radius: 1.2rem;}
 }
@@ -36,27 +36,22 @@ div ul li a {
 
 .dropdown-menu li a {
     font-size: 1rem;
-    background-color: $fondoTexto;
    
 }
 
-.header {
-    width: 100%;
-}
 
 .separador {
-    height: 0.2rem;
+    height: 0.1rem;
 }
 
 .logo {
     font-weight: 600;
 }
 
-
-
 .main {
     margin-left: 2%;
     margin-right: 2%;
+    min-height: 80vh;
 }
 
 .container {
@@ -69,14 +64,7 @@ div ul li a {
     font-size: 1rem;
 }
 
-%textoParrafo{
-    max-width: 600px;
-    border: 0.15rem solid black;
-    padding: 0.6rem;
-    background-color:$fondoTexto;
-    opacity: 0.6;
 
-}
 
 .nosotros {@extend %textoParrafo;
 
@@ -92,35 +80,22 @@ div ul li a {
     justify-content: space-between;
     align-items: center;
     padding-left: 0.7rem;
+    .pie {
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+    a img{
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+    }
 }
-
-
 
 /* FORMULARIO DE CONTACTO */
 
-.formulario {
-    padding: 2.1rem;
-    background-color:lightgray;
-    border-radius: 1rem;
-    margin: auto;
-    max-width: 600px;
-    margin-top: 2rem;
-    margin: auto;
-    height: 70vh;
-    max-height: 450px;
-    opacity: 0.9;
+.formulario {@extend %formulario;
+@include colorDeFondo()}
 
-
-}
-
-ion-icon {
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-.pie {
-    font-size: 1rem;
-}
+.direccion {@extend %direccion;}
 
 .direcciones {
     text-transform: uppercase;
@@ -129,12 +104,6 @@ ion-icon {
 }
 
 /* PRUEBA DE ESTILOS */
-.mapa {
-    border: 0.15rem solid black;
-    height: 10rem;
-    position: relative;
-    overflow: hidden;
-}
 
 .fondoNosotros {
     background-image: url('../img-inmobiliaria/felipe-labate-9uICMSlbtCo-unsplash.jpg');
@@ -165,39 +134,16 @@ ion-icon {
     height: 70vh;
 }
 
+.propi:hover{border: solid 5px black;}
 
-.grids {
-    margin-left: 1%;
-    margin-right: 1%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-gap: 0.3rem;
-    border: 0.15rem solid black;
-}
-
-.propiedades {
-    grid-column: 1/5;
-}
-
-.descripcion {
-    grid-column: 5/6;
-    display: flex;
-    flex-direction: column;
-}
 
 /* MEDIA QUERIES */
 
 
 @media(max-width:768px) {
 
-    ion-icon {
-        font-size: 1.5rem;
-        padding: 0.3rem;
-    }
-
     .pie {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .desc {
@@ -206,20 +152,22 @@ ion-icon {
     }
 
     .formulario {
-        max-width: 380px;
-        border-radius: 10px;
+        max-width: 370px;
     }
 
+.footer a img{
+    padding-right: 0.5rem;
+        padding-bottom: 0.3rem;
+}
+.direccion{
+    font-size: 1rem;
+}
+       
 }
 
 @media(max-width:370px) {
 
-    ion-icon {
-        font-size: 1.4rem;
-        padding: 0px;
-    }
-
     .pie {
-        font-size: 0.5rem;
+        font-size: 0.35rem;
     }
 }

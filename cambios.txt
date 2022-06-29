@@ -1,0 +1,6 @@
+Se organizaron los archivos HTML dentro de la carpeta PAGINAS
+Se crearon archivos SCSS (COLORES Y EXTEND) para facilitar el uso de estilos y agruparlos dentro de la carpeta VARIABLES
+Se adaptaron las imagenes de las propiedades (en tamaño y resolución) para ser compatibles  con un sitio web. 
+Los iconos de redes sociales son .png
+Se agregó etiqueta META para SEO con las siguientes palabras clave: "inmobiliaria, inmuebles, propiedades, exclusiva, premium, categoria, alquiler, venta".
+Se agregó etiqueta META para SEO con la siguiente frase: "propiedades premium en alquiler y venta en la ciudad de buenos aires".
