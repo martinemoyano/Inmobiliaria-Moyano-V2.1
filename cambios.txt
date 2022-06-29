@@ -4,3 +4,4 @@ Se adaptaron las imagenes de las propiedades (en tamaño y resolución) para ser
 Los iconos de redes sociales son .png
 Se agregó etiqueta META para SEO con las siguientes palabras clave: "inmobiliaria, inmuebles, propiedades, exclusiva, premium, categoria, alquiler, venta".
 Se agregó etiqueta META para SEO con la siguiente frase: "propiedades premium en alquiler y venta en la ciudad de buenos aires".
+Se agregaron los nombres de cada pagina en "Title"
