@@ -78,7 +78,7 @@ div ul li a {
   justify-content: space-between;
   align-items: center;
   padding-left: 0.7rem; }
-  .footer .pie {
+  .footer__pie {
     font-size: 1rem;
     margin-left: 20px; }
   .footer a img {
@@ -94,7 +94,6 @@ div ul li a {
   font-size: 0.7rem;
   font-weight: 500; }
 
-/* PRUEBA DE ESTILOS */
 .fondoNosotros {
   background-image: url("../img-inmobiliaria/felipe-labate-9uICMSlbtCo-unsplash.jpg");
   background-size: cover;
@@ -123,10 +122,13 @@ div ul li a {
 .propi:hover {
   border: solid 5px black; }
 
+.pie {
+  font-size: 1.3rem; }
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .pie {
-    font-size: 0.5rem; }
+    font-size: 1rem; }
   .desc {
     margin-top: 1rem;
     font-size: 0.8rem; }
@@ -140,4 +142,7 @@ div ul li a {
 
 @media (max-width: 370px) {
   .pie {
-    font-size: 0.35rem; } }
+    font-size: 0.65rem; }
+  .footer a img {
+    padding-right: 0.1rem;
+    padding-bottom: 0.1rem; } }
