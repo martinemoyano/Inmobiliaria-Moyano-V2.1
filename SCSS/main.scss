@@ -8,21 +8,23 @@
 @import './variables/extend.scss';
 
 
-.navbar-brand {
 
-    background-color: $colorHeaderFooter;
+
+.navbar-brand {
     border-radius: 1.2rem;
     padding: 0.2rem;
-    &:hover{ background-color:$colorHover;
-        border-radius: 1.2rem;}
-}
+    padding-right: 0.6rem;
 
+    &:hover {
+        background-color: $colorHover;
+        border-radius: 1.2rem;
+    }
+}
 
 .nav-link:hover {
     background-color: $colorHeaderFooter;
     border-radius: 1.2rem;
 }
-
 
 /* estilo menu navegacion */
 div ul li a {
@@ -36,9 +38,8 @@ div ul li a {
 
 .dropdown-menu li a {
     font-size: 1rem;
-   
-}
 
+}
 
 .separador {
     height: 0.1rem;
@@ -64,10 +65,8 @@ div ul li a {
     font-size: 1rem;
 }
 
-
-
-.nosotros {@extend %textoParrafo;
-
+.nosotros {
+    @extend %textoParrafo;
 }
 
 .row {
@@ -80,27 +79,34 @@ div ul li a {
     justify-content: space-between;
     align-items: center;
     padding-left: 0.7rem;
+
     &__pie {
         font-size: 1rem;
         margin-left: 20px;
     }
-    a img{
+
+    a img {
         padding-right: 2rem;
         padding-bottom: 0.5rem;
-    }}
+    }
+}
 
-   
 /* FORMULARIO DE CONTACTO */
 
-.formulario {@extend %formulario;
-@include colorDeFondo()}
+.formulario {
+    @extend %formulario;
+    @include colorDeFondo()
+}
 
-.direccion {@extend %direccion;}
+.direccion {
+    @extend %direccion;
+}
 
 .direcciones {
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 500;
+    background-color: $colorGeneral;
 }
 
 .fondoNosotros {
@@ -119,7 +125,7 @@ div ul li a {
 .cajaRequisitos {
     border: 0.15rem solid black;
     padding: 0.7rem;
-    background-color:$fondoTexto;
+    background-color: $fondoTexto;
     opacity: 0.6;
     height: fit-content;
     max-width: 600px;
@@ -134,10 +140,12 @@ div ul li a {
 
 }
 
-.propi:hover{border: solid 5px black;}
+.propi:hover {
+    border: solid 3px $colorPropi;
 
+}
 
-.pie{
+.pie {
     font-size: 1.3rem;
 }
 
@@ -159,14 +167,14 @@ div ul li a {
         max-width: 370px;
     }
 
-.footer a img{
-    padding-right: 0.5rem;
+    .footer a img {
+        padding-right: 0.5rem;
         padding-bottom: 0.3rem;
-}
-.direccion{
-    font-size: 1rem;
-}
-       
+    }
+
+    .direccion {
+        font-size: 1rem;
+    }
 }
 
 @media(max-width:370px) {
@@ -174,8 +182,9 @@ div ul li a {
     .pie {
         font-size: 0.65rem;
     }
-    .footer a img{
+
+    .footer a img {
         padding-right: 0.1rem;
-            padding-bottom: 0.1rem;
+        padding-bottom: 0.1rem;
     }
 }
