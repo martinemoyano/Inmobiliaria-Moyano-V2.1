@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
 
-%textoParrafo{
+%textoParrafo {
     max-width: 600px;
     padding: 0.6rem;
-    background-color:$fondoTexto;
+    background-color: $fondoTexto;
     opacity: 0.8;
 }
 
-%direccion{font-family: 'Arvo', serif;
+%direccion {
+    font-family: 'Arvo', serif;
     font-size: 1.2rem;
-margin-top: 0.5rem;} 
+    margin-top: 0.5rem;
+}
 
-%formulario{
+%formulario {
     padding: 2.1rem;
-    background-color:lightgray;
+    background-color: lightgray;
     border-radius: 1rem;
     margin: auto;
     max-width: 600px;
@@ -26,5 +28,4 @@ margin-top: 0.5rem;}
 
 @mixin colorDeFondo {
     background-color: $colorDeFondo;
-    
 }
