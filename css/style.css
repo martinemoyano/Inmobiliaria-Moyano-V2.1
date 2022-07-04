@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=The+Nautigal:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.navbar-brand, .pie {
+  font-family: 'The Nautigal', cursive;
+  font-size: 30px;
+  font-weight: 600; }
 
 .nosotros {
   max-width: 600px;
@@ -52,9 +58,6 @@ div ul li a {
 
 .separador {
   height: 0.1rem; }
-
-.logo {
-  font-weight: 600; }
 
 .main {
   margin-left: 2%;
@@ -124,7 +127,7 @@ div ul li a {
   border: solid 3px #373AE7; }
 
 .pie {
-  font-size: 1.3rem; }
+  font-size: 1.6rem; }
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
@@ -143,7 +146,7 @@ div ul li a {
 
 @media (max-width: 370px) {
   .pie {
-    font-size: 0.65rem; }
+    font-size: 0.8rem; }
   .footer a img {
     padding-right: 0.1rem;
     padding-bottom: 0.1rem; } }
