@@ -5,10 +5,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-.navbar-brand, .pie {
+.navbar-brand {
   font-family: 'The Nautigal', cursive;
   font-size: 30px;
-  font-weight: 600; }
+  font-weight: 600;
+  background-color: #a2d2ff; }
 
 .nosotros {
   max-width: 600px;
@@ -38,12 +39,17 @@
   padding: 0.2rem;
   padding-right: 0.6rem; }
   .navbar-brand:hover {
-    background-color: #8484ae;
-    border-radius: 1.2rem; }
+    background-color: #a2d2ff;
+    border-radius: 1.2rem;
+    border: 2px solid #373AE7; }
 
 .nav-link:hover {
-  background-color: #A9A9C7;
-  border-radius: 1.2rem; }
+  background-color: #a2d2ff;
+  border-radius: 1.2rem;
+  border: 1px #373AE7; }
+
+.headerWs :hover {
+  transform: scale(1.3); }
 
 /* estilo menu navegacion */
 div ul li a {
@@ -127,7 +133,9 @@ div ul li a {
   border: solid 3px #373AE7; }
 
 .pie {
-  font-size: 1.6rem; }
+  font-family: 'The Nautigal', cursive;
+  font-size: 1.6rem;
+  margin-left: 20px; }
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {

@@ -1,7 +1,7 @@
 {
   "name": "inmobv2.1-copy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina web de inmobiliaria en donde se muestran las propiedades disponibles, requisitos necesarios para alquiler, y canales de comunicación",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/martinemoyano/Inmobiliaria-Moyano-V2.1.git"
   },
-  "author": "",
+  "author": "Martin Moyano",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/martinemoyano/Inmobiliaria-Moyano-V2.1/issues"

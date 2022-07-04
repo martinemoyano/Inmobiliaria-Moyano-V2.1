@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=The+Nautigal:wght@700&display=swap');
 @import './colores.scss';
 
-%logo
-{ font-family: 'The Nautigal', cursive;
+%logo {
+    font-family: 'The Nautigal', cursive;
     font-size: 30px;
-    font-weight: 600;}
+    font-weight: 600;
+    background-color: $colorLogo;
+}
 
 %textoParrafo {
     max-width: 600px;
